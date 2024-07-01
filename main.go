@@ -4,7 +4,6 @@ import (
 	"database/sql"
 	"fmt"
 
-	//"log"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -62,7 +61,6 @@ func main() {
 	}
 	defer db.Close()
 
-	// Check the connection.
 	err = db.Ping()
 	if err != nil {
 		panic(err)
